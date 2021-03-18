@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/items/{item_id}")
 async def read_item(item_id):
-    return {"item_id": item_id}
+    return {"item_id": item_id + 'AAA'}
 
 #*********************************************************************
 #* root - /
@@ -18,4 +18,4 @@ async def read_item(item_id):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World2"}
+    return {"message": "Hello World - udało się"}
